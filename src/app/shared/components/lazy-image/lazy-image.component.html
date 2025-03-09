@@ -1,0 +1,8 @@
+<div class="d-flex justify-content-center">
+
+<img *ngIf="!hasLoaded" class="card-img-top" height="35" width="35" src="loader.svg">
+
+<img (load)="onload()"  class="card-img-top animate__animated animate__bounceIn animate__delay-2s" [src]="url" alt=""  [ngStyle]="{ display: hasLoaded ? '' : 'none' }">
+
+
+</div>

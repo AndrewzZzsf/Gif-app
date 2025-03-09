@@ -1,0 +1,9 @@
+<div id="sidebar" class="d-flex p-2 row">
+
+  <h3 class=""> GiftApp </h3>
+
+    <div *ngFor="let searchWord of gifsList" class="list-group p-2" >
+    <button (click)="buttonClick(searchWord)" class="btn btn-primary bg-dark text-center">{{searchWord}}</button>
+  </div>
+</div>
+
